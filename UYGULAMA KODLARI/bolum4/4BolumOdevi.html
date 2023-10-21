@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4. BOLUM ODEVI</title>
+</head>
+<body>
+  <script>
+//degisken tanimla
+var ad;
+ad= prompt("ad giriniz");
+//yazdir
+alert("Merhaba "+ad+" adiniz: "+ad);
+
+ //degiskenleri tanimla
+ const PI=3.14;
+        var r, alan, cevre;
+
+        //dairenin yari capini alalim
+        r=Number(prompt("yari cap uzunlugunu giriniz: "));
+        //cevre uzunlugunu bul ve yazdir
+        cevre=2*PI*r;
+        alert("cevre uzunlugu" +cevre);
+
+        //alanini bul ve yazdir
+        alan=PI*r*r;
+        alert("alani: "+alan);
+
+        //degiskenleri tanimla
+        var fahrenhayt, santgrat, fahrenhaytaDonustur, santgrataDonustur;
+        //fahrenhayt degerini al
+fahrenhayt= Number(prompt("isi derecesini fahrenhayt olaak giriniz: "));
+        //santgrat degerini al
+        santgrat=Number(prompt("isi derecesini santgrat olarak giriniz: "));
+
+        //donusumleri yaparak sonucu ekrana yazdir
+        //fahrenhayti santigrata donustur
+santgrataDonustur=(fahrenhayt-32)/1.8;
+alert(fahrenhayt+"Fahrenhayt "+santgrataDonustur+" santgrat derece yapar");
+//santigrati fahrenhayta donustur
+fahrenhaytaDonustur=santgrat*1.8+32;
+alert("fahrenhaytaDonustur "+fahrenhaytaDonustur);
+
+    //degiskenleri tanimla
+    var sayi1, sayi2, toplam;
+    //kullanicidan ilk sayiyi number veri tipinde al
+sayi1=Number(prompt("Sayi gir:"));
+    //kullanicidan ikinci sayiyi al
+sayi2=Number(prompt("sayi gir:"));
+    //toplama islemini yap
+toplam=sayi1+sayi2;
+    //sonucu yazdir
+    alert("sayi1: "+sayi1+" sayi2: "+sayi2+" iki sayinin toplami: "+toplam)
+
+  </script>  
+</body>
+</html>
