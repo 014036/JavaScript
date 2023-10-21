@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEGISKEN VERI TIPLERI</title>
+</head>
+<body>
+   
+    <script>
+        var degisken=5; //number
+        document.write(degisken+"<br>");
+        
+        degisken=3.3; //number
+        document.write(degisken+"<br>");
+        
+        degisken="Mustafa"; //string
+        document.write(degisken+"<br>");
+        
+        degisken=true; //boolean
+        document.write(degisken+"<br>");
+        
+        degisken=null; //null
+        document.write(degisken+"<br>");
+        
+        var x=5;
+        document.write("veri tipi: " +typeof(x)+"<br>"); //number
+        //NOT: JAVASCRIPT KODLARININ ICINDE HTML KODLARINI CALISTIRMAK ISTERSEK TIRNAK ISARETI ICINDE YAZMALIYIZ
+        x="Ali";
+        document.write("veri tipi: "+typeof(x)+"<br>");
+        x= true;
+        document.write("Veri tipi: "+typeof(x)+"<br>");
+        var d;
+document.write(d); //undefined
+document.write("<br>");//alt satira goturur. Bos bir satir yazdirir
+
+//Sözel verilerin değişkenlere atanması tek veya çift tırnakla yapılabilir.
+var ad= "bilimsel";
+var soyad='akademi';
+document.write(ad+" "+soyad)
+document.write("<br>");//alt satira goturur. Bos bir satir yazdirir
+
+
+//Çift tırnak içinde tek tırnak, tek tırnak içinde çift tırnak kullanabilirsiniz.
+var cumle= 'ona "Koca Yusuf" derlerdi. Buraların en iyi güreşçisiydi';
+document.write(cumle);
+document.write("<br>");//alt satira goturur. Bos bir satir yazdirir
+var bilimsel2=5+"bilimsel";
+document.write(bilimsel2);
+document.write("<br>");
+
+//JavaScript değişkenlerine atanan ifadeler soldan sağa doğru çalıştırır. Eğer değişkene atanan ilk 2 ifade Number, üçüncü ifade String ise sonuç gene String olur ama ilk iki sayısal değere sayısal işlem yapılır.
+var y=3+5+ "bilimsel"; //x= “8bilimsel”
+document.write(y)
+document.write("<br>");
+
+
+//Bir değişkene atanan ilk değer String tipindeyse diğer değerler de String olarak görülür.
+var y= "bilimsel"+3+5; //y= “bilimsel35”
+document.write(y);
+document.write("<br>");
+
+
+
+    </script>
+</body>
+</html>

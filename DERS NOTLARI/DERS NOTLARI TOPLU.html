@@ -1,0 +1,121 @@
+<!--
+DEGISKEN TANIMLAMA KURALLARI
+JavaScript komutları (deyimleri) değişken adı olarak kullanılamaz.
+•Değişkenin ilk karakteri harf (alfanumerik) olmalıdır. Rakam (0-9) ile başlayan değişkenler hataya neden olur.
+•Değişken tek kelime olmalıdır. Eğer iki kelimeden oluşan değişkenler tanımlayacaksanız araya alt çizgi (_) koyabilirsiniz.
+•Değişkenlere sözel değer atanacaksa çift tırnak (“…”) içinde atanmalıdır.
+•var ad=”fahrettin” gibi…
+•JavaScript büyük-küçük harf duyarlı bir dildir; sayi ile Sayi değişkenleri birbirinden farklıdır.
+•JavaScript dilinde ş,ç,ü,I gibi Türkçe harfler kullanılabilir fakat pek tercih edilmemelidir çünkü umulmadık yerlerde uyumsuzluktan dolayı sıkıntı çıkabilir.
+ORNEKLER
+var ad soyad; //hata: değişken adından boşluk olamaz
+var ad_soyad; //doğru
+var 35izmir; //hata: değişken rakamla başlayamaz
+var izmir35; //doğru
+var yarıçap; //hata: Türkçe karakter tavsiye edilmez
+var Yaricap; //doğru
+--!>
+<!--Sözel Toplama
+•Metinleri veya değişkenleri yan yana toplamak veya başka bir ifade ile yan yana yazdırmak için “sözel toplama” kullanılır.
+•Sözel toplamada artı (+) karakteri aşağıdaki gibi kullanılır.
+•var ad=“ahmet”;
+•document.write(“adınız “+ad);
+•var isim=“ali”;
+•var soyisim=“kal”;
+•document.write(“adınız:“+isim+” soyadınız:”+soyisim);-->
+
+<!-- Veri Okuma
+•Ziyaretçiden veri almak için HTML formları veya prompt() komutu kullanılabilir.
+var ad=prompt(“adınızı giriniz:”);
+document.write(ad);-->
+
+
+
+<!--VERI YAZDIRMA
+•Yapılan işlem sonuçlarını ekranda görmek için document.write(), alert(), console.log() veya innerHTML komutlarını kullanabiliriz.
+document.write(“ilk satır”);
+document.write(“ilk satır”); bu kod sonucu sayfaya yazdirir
+document.write(<br>);
+document.write(“ikinci satır”);
+alert(“mesaj penceresi”);
+alert(“mesaj penceresi”); bu kod sonucu bir uyari penceresi seklinde yazdirir
+console.log(“konsola yaz”);
+console.log(“konsola yaz”); bu method ekrana yazdirma sadece konsole veri yazdirir
+document.getElementById(“h1Baslik”).innerHTML=“Başlık”; 
+Bir HTML öğesinin innerHTML özelliğini değiştirmek, verileri HTML'de görüntülemenin yaygın bir yoludur.--!>
+
+
+<!-- Değişken Veritipleri
+•JavaScript dilinde oluşturduğunuz değişkenlere değişik türde değerler/veriler atayabilirsiniz.
+•JavaScript değişkenleri dinamik veri tipindedir; atadığınız veri tipine göre otomatik olarak tip değiştirir.
+•Örneğin, bir değişkene 5 değerini atarsanız değişken veri tipi otomatik olarak sayısal (Number), “deneme” değerini atarsanız otomatik olarak sözel (String) veri tipine dönüşür.
+•var x=5; //sayısal değer (Number)
+•var ad=“Mehmet” //sözel değer (String)
+Değişken Veritipleri
+Değişken Tipi
+Açıklama
+Number Sayısal veri. Değişkenlere atanan tamsayı veya ondalıklı değerler değişkenin veritipini Number yapar.
+var x=5;
+String Sözel veri. Değişkenlere atanan karakter veya metinler değişkenin veritipini String yapar.
+var ad=“fahrettin”;
+Boolean Mantıksal veri. Bir değişkene true veya false değerini atarsanız bu değişken Boolean tipine dönüşür.
+Array Dizi tipinde değişken oluşturulmasını sağlar. Diziler birden fazla değer taşıyan değişkenlerdir.
+Undefined Herhangi bir JavaScript değişkeni tanımlanmış ama değer atanmamışsa değişkenin veri tipi Undefined olarak görülür.
+Null Boş veya değer yok
+
+
+Daha önce de öğrendiğimiz gibi, JavaScript değişkenleri dinamik veritipine sahiptir; atanan değere göre veritipi otomatik olarak değişir.
+var degisken=5; //Number
+document.write(degisken);
+degisken=3.3; //Number
+document.write(degisken);
+degisken=“metin”; //String
+document.write(degisken);
+degisken=true; //Boolean
+document.write(degisken);
+var degisken=null; //null
+document.write(degisken);
+
+Değişkenlerle İlgili Bazı Bilgiler
+Herhangi bir JavaScript değişkenine değer atanmadıysa değişken değeri undefined olarak görülür.
+var d;
+document.write(d); //undefined
+Sözel verilerin değişkenlere atanması tek veya çift tırnakla yapılabilir.
+var ad= “bilimsel”;
+var soyad= ‘akademi’;
+Çift tırnak içinde tek tırnak, tek tırnak içinde çift tırnak kullanabilirsiniz.
+var cumle= ‘ona “Koca Yusuf” derlerdi. Buraların en iyi güreşçisiydi’;
+
+•Bir değişkene hem sayısal hem de sözel değişken atarsanız sözel toplama yapılır.
+•var x=5+ “bilimsel”; //x= “5bilimsel” olur.
+•JavaScript değişkenlerine atanan ifadeler soldan sağa doğru çalıştırır. Eğer değişkene atanan ilk 2 ifade Number, üçüncü ifade String ise sonuç gene String olur ama ilk iki sayısal değere sayısal işlem yapılır.
+•var y=3+5+ “bilimsel”; //x= “8bilimsel”
+•Bir değişkene atanan ilk değer String tipindeyse diğer değerler de String olarak görülür.
+•var y= “bilimsel”+3+5; //y= “bilimsel35”
+
+NOT: Const JavaScript const değişkenlerine bildirildiklerinde bir değer atanmalıdır
+JavaScript const ne zaman kullanılır?
+const Değerin değiştirilmemesi gerektiğini bildiğinizde her zaman bir değişkeni bildirin .
+NOT: JAVASCRIPT KODLARININ ICINDE HTML KODLARINI CALISTIRMAK ISTERSEK TIRNAK ISARETI ICINDE YAZMALIYIZ
+
+
+Veritipi Dönüştürme
+JavaScript değişkenlerinin veritipini değiştirmek için aşağıdaki komutlar kullanılır:
+Fonksiyon
+
+Number(veri) Parantez içindeki veriyi sayısal değere dönüştürür.
+String(veri) Parantez içindeki veriyi sözel değere dönüştürür.
+Boolean(veri) Verinin Boolean tipine dönüştürülmesini sağlar. Sıfırdan büyük tüm değerler ve metinler true; boş, sıfır ve daha küçük değerler ile null ve undefined değerleri false veritipine dönüştürülür.
+Date(veri) Verinin Date (tarih) tipine dönüştürülmesini sağlar.
+ //NOT: EKRANDAN ALINAN BUTUN DEGERLER ISTER RAKAM OLSUN ISTER YAZI HEPSI STRING VERI TIPINDEDIR
+
+
+ HTML ICINDE JS, JS ICINDE HTML KULLANIMI
+•HTML içinde Javascript, Javascript içinde HTML kodu kullanılabilir.
+•HTML kodu içinde Javascript kodu kullanmak için <script> etiketi kullanılır.
+•Javascript içinde HTML kodu “metin” olarak yazılır.
+•var ad=“Ahmet”;
+•document.write(“merhaba <b>ad</b>”);
+•document.write(“<br>”);
+•document.write(“web sitemize hoş geldiniz!”);
+--!>

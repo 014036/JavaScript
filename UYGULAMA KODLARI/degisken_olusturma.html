@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEGISKEN OLUSTURMA</title>
+</head>
+<body>
+    <h1 id="test">BASLIGI JAVA SCRPT ILE DEGISTIRMEK</h1>
+   <script>
+    //degisken olusturma degisken olusturmak icin "var" komutu kullanilir
+    var a; //satirda tek komut varsa komut sonlarina ; isareti koymazsak da komut calisir
+    a=1;
+    var b=2;
+    var adSoyadi="Mustafa AKIN";
+    //bir satirda birden fazla degisken olusturabiliriz. Ayni satirda olusturacagimiz ikinci degiskene "var" kelimesini yazmayiz
+    var c=3, d;
+    d=4;
+    //2015'ten sonra "var" komutunun yanina "let" ve "const" komutlari geldi "const" komutu degeri hicbir zaman degismeyecek,  sabit olan degerler icin (pi sayisi gibi)kullanilir.Eski tarayicilari desteklemek icn=in "var" komutu kullanilir
+         //sabit egiskenler genellikle buyuuk harfle tanimlanir
+        const PI=3.14;
+        //Degisken sadece tanimlandigi blok/fonksiyon icinde kullanilacaksa "let" komutunu kullanabiliriz
+        //blok degiskenleri tanimlama
+        let x=5;
+        let y=6;
+        let toplam=x+y;
+        //degisken olustururken degisken turunu yazmak zorundadegilim
+        x=1;
+        y=2;
+        toplam=x+y;
+        alert(toplam);
+        //EKRANA VERI YAZDIRMA
+        alert("Biirinci Yontem alert");
+        var ad="Mustafa";
+        alert(ad);
+document.write("birinci satir");
+document.write(ad);
+console.log("mustafa Akin");
+console.log(ad);
+document.getElementById("test").innerHTML="Mustafa AKIN olarak degistir";
+document.getElementById("test").innerHTML=ad;
+
+   </script> 
+</body>
+</html>

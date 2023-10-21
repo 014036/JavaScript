@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fahrenhayt-Santigrat Dönüşümü</title>
+</head>
+<body>
+    <script>
+        //degiskenleri tanimla
+        var fahrenhayt, santgrat, fahrenhaytaDonustur, santgrataDonustur;
+        //fahrenhayt degerini al
+fahrenhayt= Number(prompt("isi derecesini fahrenhayt olaak giriniz: "));
+        //santgrat degerini al
+        santgrat=Number(prompt("isi derecesini santgrat olarak giriniz: "));
+
+        //donusumleri yaparak sonucu ekrana yazdir
+        //fahrenhayti santigrata donustur
+santgrataDonustur=(fahrenhayt-32)/1.8;
+alert(fahrenhayt+"Fahrenhayt "+santgrataDonustur+" santgrat derece yapar");
+//santigrati fahrenhayta donustur
+fahrenhaytaDonustur=santgrat*1.8+32;
+alert("fahrenhaytaDonustur "+fahrenhaytaDonustur);
+    </script>
+</body>
+</html>
