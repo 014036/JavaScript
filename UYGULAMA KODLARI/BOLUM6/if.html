@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IF KOMUTU</title>
+</head>
+<body>
+    <script>
+
+        //Ekrandan alınan ziyaretçinin yaşı 18’den küçükse sayfaya “yaşınız küçük” yazdıralım:
+        var age=Number(prompt("yasiniz:"));
+        if(age<0){
+            alert("yas negatif olamaz")
+        }else{
+            if(age<18){
+            document.write("yasiniz kucuk");
+            document.write("<br>");
+            document.write("Sitemize uye olmak icin veli onayi gerekmektedir");
+        }else{
+            document.write("yasiniz 18'den buyuktur");
+            document.write("<br>");
+            document.write("sitemize hosgeldiniz");
+        }
+        }
+       
+    </script>
+</body>
+</html>

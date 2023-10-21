@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//Bölüm konularını iyice tekrar edip yapılan uygulamaları gözden geçiriniz.
+    //Ekrandan prompt() komutu ile girilen sayısal değeri 1 artırıp sayfaya kalın harflerle yazdırınız. (document.write())
+//Ekrandan prompt() komutu ile alınan 3 sayının ortalamasını bulup alert() komutu ile gösteriniz.
+
+var a, say1, sayi2, sayi3, ortalama;
+
+//Ekrandan prompt() komutu ile girilen sayısal değeri 1 artırıp sayfaya kalın harflerle yazdırınız. 
+a=Number(prompt("Lutfen bir sayi giriniz"));
+document.write("<b><i>",++a);
+
+    //Ekrandan prompt() komutu ile alınan 3 sayının ortalamasını bulup alert() komutu ile gösteriniz.
+    say1=Number(prompt("birinci sayi:"));
+    sayi2=Number(prompt("ikinci"));
+    sayi3=Number(prompt("ucuncu sayi:"));
+    ortalama=(say1+sayi2+sayi3)/3;
+    alert("Ortalama " +ortalama);
+    </script>
+</body>
+</html>
