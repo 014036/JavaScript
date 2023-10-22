@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //n aadet sayinin ortalamasini bulma
+        //degisken tanimla
+        var n, i, sayac, sayilar, toplam, ortalama;
+        n=Number(prompt("Kac adet sayi girmek istiyorsunuz?"));
+        
+        toplam=0;
+        for(i=0; i<n; i++){
+            alert((n-i)+" adet sayi girme hakkiniz var")
+            sayilar=Number(prompt("Lutfen sayi giriniz: "));
+            toplam+=sayilar;
+
+        } 
+        ortalama=toplam/n;
+        alert("girdiginiz "+n+" adet sayinin ortalamasi "+ortalama+" dir");
+    </script>
+</body>
+</html>

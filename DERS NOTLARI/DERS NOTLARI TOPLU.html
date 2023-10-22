@@ -292,4 +292,21 @@ do-while Döngüsü
 •Bir önceki konuda while döngüsünü anlatırken önce şartın kontrol edildiğini ve şart sağlanırsa işlem yapıldığını öğrenmiştik.
 •do-while komutunda ise önce işlem yapılır daha sonra şart kontrol edilir. Şart sağlandığı sürece de döngü devam eder.
 •Yani do-while komutunda işlem ya da döndü en az bir defa çalışır.
+
+
+********* break ve continue Komutları ***********
+•break ve continue komutları kontrol ve döngü komutlarının akışını kontrol etmek için kullanılır.
+•Kısaca açıklamak gerekirse, break komutu döngüyü sonlandırırken continue komutu ise döngüde belli şarta uyan adımın atlanmasını sağlar.
+
+
+****** Sonsuz & Ölü Döngü *****
+•Eğer döngüdeki şart sürekli sağlanırsa sonsuz yani hiç bitmeyen bir döngü oluşur.
+•Bilgisayar kilitlenebilir.
+var x=5, y=10;
+while(x<y)
+document.write(“x küçük”);
+•Eğer döngüdeki şart hiç sağlanmazsa ölü yani hiç çalışmayan bir döngü oluşur.
+var x=5, y=10;
+while(x>y)
+document.write(“x küçük”);
 --!>
