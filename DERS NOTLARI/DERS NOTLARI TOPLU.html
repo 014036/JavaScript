@@ -223,4 +223,73 @@ komut2;
 }
 
 
+if-else Komutu
+•if-else sorgusunda herhangi bir şart sağlanırsa belli bir komut ya da komut grubunun çalışması sağlanır. Eğer şart sağlanmazsa başka bir komut ya da komut grubu çalıştırılır.
+
+if-else if-else Komutu
+•Bu komut aslında İç içe geçmiş if-else yapılarından oluşur.
+•Doğal olarak da en karmaşık görünen kontrol komutudur; eğer birden fazla şart kontrol edilip uygun şarta göre komut çalıştırılacaksa if-else if-else komutu kullanılır.
+
+
+BOLUM 7 DONGULER
+
+Döngü Nedir?
+•Bir işlemi belli bir sayıda veya belli bir şart gerçekleştiği sürece veya belli bir şart gerçekleşene kadar tekrar eden kod yapısına döngü denir.
+•Kontrol yapıları ile beraber döngü komutları programcılıkta en çok kullanılan komutlardır.
+•Ekrana 5 defa “Merhaba” yazdırmak istediğinizi düşünün. Burada da tekrarlı bir yapı söz konusudur ve bu sorunu halletmenin en kolay yöntemi bir döngü oluşturmaktır.
+
+Döngü Tipleri
+•Eğer döngü sayısı belli ise bu tür döngülere sabit döngü denir.
+•Eğer döngü sayısı belli değilse ve belli bir şart gerçekleştiği sürece döngü çalışırsa bu tür döngülere şartlı döngü denir.
+•Döngü Tipleri:
+•Sabit Döngü Komutları
+•for
+•Şartlı Döngü Komutları
+•while
+•do-while
+
+
+for Döngüsü
+•Bir işlemin tekrar sayısı belli ise for() döngüsü kullanılır. Döngüdeki şart sağlandığı sürece döngü çalışır
+•for() döngüsünde döngünün kaç defa çalıştığını belirleyen bir sayaç, döngünün çalışıp çalışmayacağını belirleyen bir şart ve sayacın artış durumunu belirleyen sayaç artış ifadesi bulunur.
+
+for Döngüsü Sözdizimi (Syntax)
+•Tek komut çalıştırılacaksa:
+for(sayaç; şart; sayaç_artışı)
+komut;
+•Çok komut çalıştırılacaksa:
+for(sayaç; şart; sayaç_artışı)
+{
+komut1;
+komut2;
+komut3;
+…
+}
+
+
+while() Döngüsü
+•Döngü sayısının belli olmadığı durumlarda while döngüsü kullanılır; belirtilen şart sağlandığı sürece döngü çalışmaya devam eder.
+•while döngüsünün akış diyagramını yanda görebilirsiniz.
+•Dikkat edilirse önce şart kontrol edilir; eğer şart sağlanırsa işlem yapılır ve döngü devam eder.
+•Şart sağlanmazsa döngüden çıkılır.
+
+
+while Döngüsü Sözdizimi (Syntax)
+•Tek komut çalıştırılacaksa:
+while(şart)
+işlem;
+•Çok komut çalıştırılacaksa:
+while(şart)
+{
+işlem1;
+işlem2;
+Işlem3;
+…
+}
+
+
+do-while Döngüsü
+•Bir önceki konuda while döngüsünü anlatırken önce şartın kontrol edildiğini ve şart sağlanırsa işlem yapıldığını öğrenmiştik.
+•do-while komutunda ise önce işlem yapılır daha sonra şart kontrol edilir. Şart sağlandığı sürece de döngü devam eder.
+•Yani do-while komutunda işlem ya da döndü en az bir defa çalışır.
 --!>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //Öğrencinin aldığı 0-100 arası nota göre başarı durumunu tespit edelim. Eğer 50 veya daha az aldı ise kaldı, 50 ile 65 arası orta, 66 ile 80 arası iyi ve diğer durumlarda (yani 81 ile 100 arası) pekiyi olsun.
+//degisken tanimla
+        var not=Number(prompt("Notunuzu giriniz: "));
+        if(not<50){
+            document.write("kaldi");
+        }else if(not<=65){
+            document.write("orta");
+        }else if(not<=85){
+            document.write("iyi");
+        }else{
+            document.write("Pekiyi");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //sıfırdan n’e kadar olan çift sayıların toplamı
+var sayi, toplam;
+toplam=0;
+sayi=Number(prompt("Bir sayi giriniz:"));
+for(var x=0; x<sayi; x=x+2){
+    if(x%2==0){
+toplam+=x;
+document.write("x= "+x);
+document.write(" toplam= "+toplam+"<br>");
+    }
+}
+document.write(toplam);
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--İki vize ortalamasının %40’ı ile final notunun %60’ı, 50’iden küçükse “kaldı”, aksi takdirde “geçti” yazan programı yazınız.
+•Hava sıcaklığı 0’dan küçükse “dondurucu”, 15’ten küçükse “soğuk”, 25’ten küçükse “ılık”, diğer durumlarda “sıcak” yazan programı kodlayınız.  -->
+<script>
+    //degisken tanimla
+var vizeNotu1, vizeNotu2, finalNotu, ortalama, vizeOrtalamasi;
+
+//notlari al
+vizeNotu1=Number(prompt("1.Vize notunuz: "));
+vizeNotu2=Number(prompt("2.Vize notunuz: "));
+vizeOrtalamasi=(vizeNotu1+vizeNotu2)/2;
+finalNotu=Number(prompt("Final Notunuz: "))
+ortalama= vizeOrtalamasi*0.4+finalNotu*0.6;
+//sonuc
+if(ortalama<50){
+    alert("Ortalamaniz: "+ortalama+"  KALDI");
+    }else{
+        alert("Ortalamaniz  "+ortalama+"  GECTI")
+    }
+
+
+//Hava sıcaklığı 0’dan küçükse “dondurucu”, 15’ten küçükse “soğuk”, 25’ten küçükse “ılık”, diğer durumlarda “sıcak” yazan programı kodlayınız. 
+
+//degisken tanimla
+var sicakliDegeri;
+//veri al
+sicakliDegeri=Number(prompt("Hava Sicakligini yaziniz:"));
+
+//islem yap
+
+if(sicakliDegeri<0){
+alert("dondurucu");
+}else if(sicakliDegeri<15){
+    alert("soguk");
+}else if(sicakliDegeri<25){
+    alert("ilik");
+}else{
+    alert("Sicak");
+}
+</script>
+</body>
+</html>
