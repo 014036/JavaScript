@@ -348,4 +348,30 @@ function merhaba()
 document.write(“merhaba”);
 }
 merhaba();
+
+Tek Parametreli Fonksiyonlar Örnek1
+•Parametreler fonksiyona ana program tarafından gönderilen değerlerdir. Fonksiyon ana programdan gelen değeri alarak bir takım işlemler yapar.
+function kare(a)
+{
+var k=a*a;
+return k;
+}
+var s=Number(prompt(“Sayı:”);
+document.write(kare(s));
+
+Çok Parametreli Fonksiyonlar
+•Ana programdan fonksiyona bir veya daha fazla değer yani parametre gönderilebilir. Eğer tek bir parametre gönderilecekse parantez içine yazılır. Birden fazla değer gönderilecekse parametreler gene parantez içine fakat araya virgül konularak yazılır.
+function topla(a,b)
+{
+var toplam=a+b;
+return toplam;
+}
+
+
+Fonksiyon Çalıştırma Seçenekleri?
+•Parametresiz bir fonksiyon çağıracaksanız doğrudan çağırabilirsiniz. Örneğin kullanacağınız fonksiyonun adı topla ise programa doğrudan topla(); yazabilirsiniz.
+•Parametreli bir fonksiyon kullanacaksanız ana programdan fonksiyona parametre göndermeniz gerekir. Örneğin topla(a,b) şeklinde bir fonksiyon kullanacaksanız ilgili değerleri veya değişkenleri fonksiyona göndermeniz gerekir. Örneğin, ana programda x ve y gibi iki değişkeni toplamak istediğinizi düşünün. Bu durumda fonksiyonu topla(x, y); şeklinde çağırmanız gerekir.
+•Fonksiyonu değişkenlere atayarak da kullanabilirsiniz. Örneğin x ve y değişkenlerinin toplamını toplam değişkeninde saklamak istiyorsanız toplam=topla(x, y); şeklinde bir kod yazabilirsiniz.
+•Fonksiyonu başka bir fonksiyon içinde de kullanabilirsiniz. Örneğin x ve y değerlerinin toplamını ekrana yazdırmak istiyorsanız alert(“toplam=”+topla(x, y)); şeklinde bir kod yazabilirsiniz.
+
 --!>
