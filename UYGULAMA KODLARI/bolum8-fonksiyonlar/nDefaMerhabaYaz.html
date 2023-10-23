@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//N Defa Merhaba Yaz
+
+function merhabaYaz(n){
+for(var i=1; i<=n; i++){
+    document.write("Merhaba Yaz <br>");
+}
+}
+
+merhabaYaz(Number(prompt("sayi gir")));
+
+//parametresiz merhaba methodu;
+function merhaba(){
+    document.write("Merhaba <br>");
+}
+
+//kullanicidan sayi al
+var n= Number(prompt("sayi gir"));
+for(var i=1; i<=n; i++){
+    merhaba();
+}
+    </script>
+</body>
+</html>
