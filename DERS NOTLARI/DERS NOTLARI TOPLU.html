@@ -309,4 +309,43 @@ document.write(“x küçük”);
 var x=5, y=10;
 while(x>y)
 document.write(“x küçük”);
+
+
+BOLUM 8 FONKSIYONLAR
+
+Fonksiyon Nedir?
+•Ana program tarafından gerektiğinde çağırılıp çalıştırılan program parçacıklarına fonksiyon denir.
+•Program içinde bazı işlemleri sık sık yapıyorsanız her işlem için kod yazmak yerine bu kodu bir defa yazar ve fonksiyon olarak kaydederiz. Daha sonra da gerektiğinde bu kodları/fonksiyonları çağırıp çalıştırırız.
+
+Fonksiyon Nasıl Oluşturulur?
+•Fonksiyonumuzu aşağıdaki kalıba uygun bir şekilde hazırlamalıyız:
+function fonksiyon_adı(varsa parametreler)
+{
+kodlar;
+return değişken;
+}
+
+Fonksiyon Nasıl Çalıştırılır / Çağırılır?
+•1.Kodların arasına yazarak: JavaScript komutları yukarıdan başlayarak aşağı doğru sırayla çalıştırılır. Çalıştırmak istediğiniz fonksiyonun adını yazarak herhangi bir fonksiyonun çalışmasını sağlayabilirsiniz. Örneğin merhaba() adlı bir fonksiyonunuz varsa ve bu fonksiyonu çalıştırmak istiyorsanız ilgili satıra merhaba(); yazmanız yeterlidir.
+•2.Bir olayla tetikleyerek: Belirli bir olay gerçekleştiğinde belli bir JavaScript fonksiyonunun çalışmasını sağlayabilirsiniz. Örneğin fareyle bir butona tıkladığınızda belirli bir fonksiyonun çalışmasını sağlayabilirsiniz.
+•<input type= “button” value= “Tıkla” onclick= “merhaba()”>
+
+Fonksiyon Çeşitleri
+•Değer Döndürmeyen Fonksiyonlar
+•Parametresiz
+•Tek Parametreli
+•Çok Parametreli
+•Değer Döndüren Fonksiyonlar
+•Parametresiz
+•Tek Parametreli
+•Çok Parametreli
+
+
+Değer Döndürmeyen Fonksiyonlar
+•Bu tür fonksiyonlar ana program tarafından çağırılarak çalıştırılır fakat ana programa bir değer göndermezler/döndürmezler. O nedenle bu tür fonksiyonlara “değer döndürmeyen/parametresiz fonksiyon” adı verilir.
+function merhaba()
+{
+document.write(“merhaba”);
+}
+merhaba();
 --!>
