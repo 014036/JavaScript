@@ -68,3 +68,22 @@ function faktoriyelHesapla(sayi){
     }
     return faktriyel;
 }
+
+
+// •Yükseklik ve taban uzunluğu verilen üçgenin alanını ekrana yazdıran fonksiyonu yazınız.
+
+function ucgeninAlaniniBulma(a,h){
+    var alan= (a*h)/2;
+    document.write("Ucgenin alani "+alan);
+}
+// •Yarıçapı verilen çemberin alan ve çevresini ekrana yazdıran fonksiyonu yazınız.
+
+function cemberinCevresiniBul(r){
+    var cemberinCevresi=2*3.14*r;
+    document.write("Cemberin cevresi "+cemberinCevresi);
+}
+
+function cemberinAlaniBul(r){
+    var alan= 3.14*r*r;
+    document.write("cemberin alani "+alan);
+}
