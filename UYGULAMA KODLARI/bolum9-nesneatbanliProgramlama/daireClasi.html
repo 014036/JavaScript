@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //sinif olustur
+        class Daire{
+            
+        constructor(yariCapDegeri){
+            this.yaricapDegeri=yaricapDegeri;
+                    }
+
+                     alanDaire(){
+                        return 3.14*this.yariCapDegeri*this.yariCapDegeri;
+                    }
+
+
+                     cevreDaire(){
+                        return 2*3.14*this.yariCapDegeri;
+                    }
+
+    }
+    //nesne olustur
+    
+                    var r=Number(prompt("Yaricap:"));
+                    var daire2= new Daire(r);
+                    document.write("alan= "+d2.alanDaire);
+    </script>
+</body>
+</html>

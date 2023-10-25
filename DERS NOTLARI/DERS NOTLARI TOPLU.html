@@ -397,4 +397,126 @@ Küresel (Global) Değişkenler
 •Boolean
 •Yukarıdaki fonksiyonları anlayabilmemiz ve daha doğru kullanabilmemiz için biraz nesne tabanlı programlama bilmemiz gerekiyor.
 •Bu nedenle hazır gelen Javascript fonksiyonlarını Nesne Tabanlı Programlama konusunda öğreneceğiz.
+
+
+BOLUM 9 NESNE TABANLI PROGRAMLAMA
+
+Programlama Teknikleri
+Genel olarak programlama dillerini ve teknolojilerini sınıflandıracak olursak üç farklı teknoloji ile karşılaşırız.
+•Doğrusal Programlama
+•Yapısal Programlama
+•Nesne Tabanlı Programlama
+
+Doğrusal Programlama
+•Doğrusal programlamada tüm komutlar alt alta yazılır ve sırayla çalıştırılır.
+•Programda dallanma oluşturmak için goto benzeri komutlar ve etiketler kullanılır.
+•Dallanma ve etiketler programı karmaşık hale getirdiği için özellikle büyük projelerde kodlar arap saçına döner; programın okuması ve anlaşılması iyice zorlaşır.
+
+Yapısal Programlama
+•Doğrusal programlama küçük programlar için uygunken büyük programlar için uygun değildir; goto gibi komutlar program akışını ve yönetilmesini zorlaştırır.
+•Bu nedenle doğrusal programlama terkedilmiş ve yapısal programlama kavramı ortaya atılmıştır.
+•Yapısal programlamada kodlar küçük parçalar halinde yazılır ve gerektiğinde çağrılıp kullanılır.
+•Fonksiyonları yazmak ve değiştirmek daha kolaydır.
+
+
+Nesne Tabanlı Programlama
+•1960’lı yılların sonunda ortaya atılan nesne tabanlı programlama temel olarak programların bağımsız ve birbirleriyle veri alışverişi yapabilen küçük parçalardan oluşmasını öngörmüştür.
+•Yani, modüler dediğimiz yöntem kullanılmakta ve farklı modüllerin birbiri ile iletişim kurabilmesi ve beraber çalışabilmesi benimsenmektedir.
+•Bu sayede çok büyük ve çok karmaşık yazılımlar daha kolay üretilebilmekte ve daha kolay yönetilebilmektedir.
+
+Nesne Tabanlı Programlama
+•Modülerliğin yanında nesne tabanlı programlama ayrıca,
+•bilgi gizleme (encapsulation),
+•veri soyutlama (data abstraction),
+•çok biçimlilik (polymorphism)
+•ve kalıtım (inheritance) gibi programların bakımını ve aynı program üzerinde birden fazla kişinin çalışmasını kolaylaştıran kavramları da programlama dünyasına kazandırmıştır.
+•Tüm bu avantajlarından dolayı, nesne tabanlı programlama en çok tercih edilen programlama yöntemidir.
+
+Bilgi Gizleme (Encapsulation)
+•Nesne tabanlı programlamada yazılan kodlar adına sınıf denilen yapılar içine koyulur.
+•Sınıf içinde bulunan değişkenler ve metotlar dışarıdaki kodların erişimine korumalalı (gizli) olarak bir araya getirilir.
+•Yani, sınıf dışındaki kodlar (izinle) sınıf içindeki kodların bir kısmına erişebilirken bir kısmına kesinlikle erişemez.
+•Ayrıca, yazılan kodlar dışarıdaki kodlara/kullanıcılara da görünmez. Zaten kullanıcıların sınıf içindeki kodları görmesi de gerekmez
+
+Çok Biçimlilik (Polymorphism)
+•Çok biçimlilik belirli kodların birbiriyle ilgili birden fazla iş için kullanılmasını sağlar.
+•Örneğin iki tamsayının toplamını yapan bir fonksiyon yazdıysanız bu fonksiyon sadece iki tamsayının toplamını yapar.
+•Eğer iki kesirli sayıyı toplamaya kalkarsanız hata alırsınız.
+•Fakat çok biçimlilik sayesinde bu fonksiyonun farklı sürümlerini yazıp iki kesirli sayıyı toplamasını da sağlayabiliriz.
+
+
+Kalıtım (Inheritance)
+•Nasıl doğduğumuzda anne ve babamızın bazı genetik özelliklerini alıyorsak, nesne tabanlı programlamada da yeni oluşturulan nesneler/kodlar daha önce oluşturulan bazı sınıfların/kodların özelliklerini alabilir.
+•Bu sayede çok daha hızlı uygulama geliştirebiliriz.
+•Örneğin bir dairenin alanını ve çevresini hesaplayan bir kod yazdığınızı düşünün. Eğer bu kodları Daire adlı bir sınıf içine koyar ve bu sınıftan yeni nesneler türetirseniz yeni türetilen nesneler sınıfın tüm kodlarını (fonksiyon ve değişkenlerini) kullanabilir.
+
+Nesne Tabanlı Programlama
+•Nesne tabanlı programlama dilinde her şey bir nesne olarak görülmektedir. Her nesnenin özellikleri (değişkenleri) ve metotları (fonksiyonları) bulunmaktadır.
+•Özellikler nesnenin fiziksel görünümünü belirlerken, metotlar da belirli işleri yapmasını sağlamaktadır.
+•Örneğin, kendimizi bir nesne olarak düşünelim. Boyumuz, kilomuz, ten rengimiz, göz rengimiz ve daha birçok özellik fiziksel görünüşümüzü belirler. İşte bu fiziksel görünüşümüzü belirleyen verilere (değişkenlere) özellik diyoruz.
+•Konuşma, yürüme, koşma gibi eylemler ise yapabildiğimiz işleri yani metotlarımızı belirler.
+
+
+Nesne Tabanlı Programlama
+•Sınıflar nesnelerin bir tür projesi ya da kalıbı gibidir.
+•Nasıl bir makine üretilmeden önce onun bir projesi yapılıyorsa ve projeye göre seri üretim yapılıyorsa nesnelerin de üretilmeden önce projesi yani sınıfları yapılıyor.
+•Yapılan sınıflardan da nesneler türetiliyor.
+
+Nesne Tabanlı Programlama
+•NTP açısından baktığımızda yandaki çizim bir sınıftır. Üretilecek telefonun bütün özelliklerini ve işlevlerini barındırır.
+•Bir cep telefonundaki özellik ve fonksiyonlar aşağıdaki gibi olabilir.
+•Sınıf Adı: Telefon
+•Değişkenler ( Özellikler):
+•Renk
+•Ağırlık
+•Yükseklik
+•Fonksiyonlar (İşlevler):
+•Aç (Açma düğmesine basarak)
+•Kapat (Kapatma düğmesine basarak)
+•Sesi arttır (Düğmeye basarak)
+•Sesi azalt (Düğmeye basarak)
+
+Sınıf ve Nesne Oluşturma
+•2015 yılında yayınlanan EcmaScript6 sürümüyle Javascript’e nesne tabanlı programlama desteği gelmiştir.
+•Daha önceki Javascript sürümlerinde nesne tabanlı programlama fonksiyon ve değişkenler kullanılarak (dolaylı olarak) yapılıyordu.
+•Javascript’te bir sınıf oluşturmak için aşağıdaki sözdizimi kullanılır:
+class SinifAdi{ constructor() }
+
+Javascript Sınıf ve Nesne Oluşturma Örnek1
+•Sınıf oluşturma:
+class Daire{
+constructor(yaricap){ //yapıcı fonksiyon sınıfın parametrelerini belirler
+this.yaricap=yaricap; //this parametresi ile parametreye değer atanır
+}
+}
+•Nesne oluşturma:
+•var d1=new Daire(2);
+•var d2=new Daire(3.3);
+
+
+Yapıcı Fonksiyon Nedir?
+•Yapıcı fonksiyonlar nesne içinde tanımlanan özel bir fonksiyondur. Aşağıdaki özelliklere sahiptir:
+•Adı “constructor” olmak zorundadır.
+•Sınıftan yeni bir nesne oluşturulduğunda otomatik olarak çalıştırılır.
+•Nesnenin değişkenlerine (özelliklerine) başlangıç değeri atamak için kullanılır.
+•Eğer siz bir “constructor” fonksiyon tanımlamazsanız Javascript kendisi boş bir “constructor” fonksiyonu oluşturur.
+
+
+Sınıf Fonksiyonları (Metotları)
+•Sınıf içinde tanımlanan fonksiyonlara “metot” denir.
+class Daire{
+constructor(yaricap){
+this.yaricap=yaricap; }
+alan(){return 3.14*this.yaricap*this.yaricap; }
+cevre(){return 2*3.14*this.yaricap;}
+}
+
+Sınıf Özellikleri (Değişkenler)
+•Sınıf içinde tanımlanan değişkenlere “özellik” denir.
+class Ucgen{
+static genislik=0;
+static yukseklik=0;
+
+
+
 --!>

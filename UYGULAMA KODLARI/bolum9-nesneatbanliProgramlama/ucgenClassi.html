@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        class Ucgen{
+            static genislik=0; //degisken, ozellik
+            static yukseklik=0; //degisken, ozellik
+
+
+            alanUcgen() { //methot
+            return (this.genislik*this.yukseklik)/2;
+           }
+
+            
+        }
+
+        //nesne olustur
+        var u1= new Ucgen();
+        u1.yukseklik= Number(prompt("Yukseklik gir:"));
+        u1.genislik=Number(prompt("genislik gir"));
+        document.write("Ucgenin alani: "+u1.alanUcgen()+"<br>");
+        
+        var u2=new Ucgen();
+        u2.genislik=35;
+        u2.yukseklik=10;
+        document.write("u2 alani= "+u2.alanUcgen());
+       
+    </script>
+</body>
+</html>
